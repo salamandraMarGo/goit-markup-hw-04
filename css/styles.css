@@ -632,3 +632,6 @@ footer {
 .img-work {
   display: block;
 }
+.sh-link {
+  display: flex;
+}
