@@ -89,8 +89,18 @@ ul {
 .auth-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 30px;
+  display: flex;
+  color: var(--text-cl);
+  text-decoration: none;
+  align-items: center;
+}
+
+.auth-link-icon {
+  margin-right: 10px;
+  fill: var(--text-cl);
 }
 .logo {
   color: var(--accent-cl);
@@ -318,7 +328,51 @@ a {
 .specialist-title {
   margin-bottom: 10px;
 }
-.profession {
+.sn-icons {
+  display: inline-flex;
+  flex-basis: calc(100% / 4 - 30px));
+  margin-left: calc(30px);
+  flex-direction: row
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+.sn-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.sn-icon-svg {
+  width: 20px;
+  height: 20px;  
+  border: none;
+  fill: var(--color1, #afb1b8);
+}
+
+.sn-links{
+  display: flex;
+  /* flex-basis: calc(100% / 4);
+  margin-left: calc(-1 * 30px); */
+}
+.sn-icon:hover,
+.sn-icon:focus {
+  background-color: var(--accent-cl);
+}
+.sn-icon-svg:hover,
+.sn-icon-svg:focus  {
+  fill: var(--title-light-cl);
+}
+ .sn-links-item:not(:last-child) {
+  margin-right: 10px;
+ }
+ .profession {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -339,12 +393,14 @@ a {
 .partners {
   padding-top: 94px;
   padding-bottom: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
   background-color: var(--white-backgraund-cl);
 }
 .partners-link {
   display: flex;
   flex-basis: calc(100% / 6);
-  /* margin-left: calc(-1 * 30px); */
+  margin-left: calc(-1 * 30px);
 }
 .partners-link .partners-icon {
   flex-basis: calc(100% / 6 - 30px);
@@ -366,7 +422,20 @@ a {
   padding-right: 32px;
   width: 170px;
   height: 92px;
+  fill: var(--color1, #afb1b8)
 }
+.icon:hover,
+.icon:focus {
+ border: 1px solid var(--accent-cl);
+}
+.icon:hover .icon-svg,
+.icon:focus .icon-svg {
+ fill: var(--accent-cl);
+}
+/* .clients-links:focus .clients-svg,
+.clients-links:hover .clients-svg {
+  fill: var(--text-accent-cl); */
+
 .icon-svg {
   width: 106px;
   height: 60px;
@@ -493,7 +562,6 @@ footer {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  /* padding-top: 94px; */
   background-color: var(--white-backgraund-cl);
 }
 .button {

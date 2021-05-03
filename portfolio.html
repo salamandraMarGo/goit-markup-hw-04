@@ -22,13 +22,22 @@
             </ul>
         </nav>
         <ul class="auth list">
-            <li>
+            <li class="auth-lnk">
+                <!-- <svg class="auth-link-icon" wight="16" height="12">
+                    <use href="./img/symbol-defs-hedd.svg#icon-envelope"></use>
+                </svg>                 -->
                 <a class="auth-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+
             </li>
-            <li>
+            <li class="auth-lnk">
+                <!-- <svg class="auth-link-icon" wight="10" height="16">
+                    <use href="./img/symbol-defs-hedd.svg#icon-smartphone"></use>
+                </svg>                 -->
                 <a class="auth-link" href="tel:+380961111111">+380 96111 11 11</a>
+
             </li>
         </ul>
+    </div>
     </div>
 </header>
  <main>
@@ -52,12 +61,16 @@
         </ul>
         <div class="conteiner"> 
         <ul class="work list">
-            <li class="menu-work">
+            <li class="shadow">
+            <a href="" class="sh-link" target="_blank" rel="noopener noreferrer">
+            <div class="menu-shadow">
                 <img class="img-work" src="./img/img_2.1.jpg" alt="фото галереи Технокряк" width="370" height="294">
                 <div class="menu-work-txt">
                     <h3 class="name-pic">Технокряк</h3>
                     <p class="tipe-pic">Веб-сайт</p>
-                </div>
+                </a>
+            </div>
+            </div>
             </li>
             <li class="menu-work">
                 <img class="img-work" src="./img/img_2.2.jpg" alt="фото галереи Постер New Orlean vs Golden Star" width="370" height="294">
@@ -119,9 +132,9 @@
         </div>
     </section>
  </main>
- <footer>
-    <div class="conteiner">
-    <a href="./index.html" class="logo">Web<span class="part-logo">Studio</span></a>
+ <footer class="footer-main container">
+    <div class="footer-adress">
+    <a href="./index.html" class="footer-logo">Web<span class="footer-part-logo">Studio</span></a>
     <address>
         <ul class="adress-info list">
             <li class="adress">
@@ -134,8 +147,20 @@
                 <a href="tel:+380961111111">+380 96111 11 11</a>
             </li>
         </ul>
-    </address>
+    </address>    
     </div>
+    <div class="footer-links">
+        <p class="footer-links-title">присоединяйтесь</p>      
+        <ul class="sn link">
+            <div class="sn-link-ig"></div>
+            <div class="sn-link-tv"></div>
+            <div class="sn-link-fb"></div>
+            <div class="sn-link-in"></div>
+        </ul>
+    </div>  
+    
+
+    
  </footer>
 </body>
 </html>
