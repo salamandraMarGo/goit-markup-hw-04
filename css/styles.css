@@ -91,7 +91,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-right: 30px;
+  /* margin-right: 30px; */
   display: flex;
   color: var(--text-cl);
   text-decoration: none;
@@ -151,10 +151,12 @@ a {
 .auth :active {
   color: var(--accent-cl);
 }
-
-.auth .auth-link {
-  margin-left: 50px;
+.auth-item:not(:last-child) {
+margin-right: 30px;
 }
+/* .auth .auth-link {
+  margin-left: 50px;
+} */
 
 /*hero-section*/
 
