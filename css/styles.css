@@ -102,6 +102,10 @@ ul {
   margin-right: 10px;
   fill: var(--text-cl);
 }
+.auth-link-icon:hover,
+.auth-link-icon:focus {
+  fill: var(--accent-cl);
+}
 .logo {
   color: var(--accent-cl);
   font-family: var(--logo-fonts);
@@ -649,4 +653,9 @@ footer {
 }
 .sh-link {
   display: flex;
+}
+.menu-shadow:hover,
+.menu-shadow:focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
